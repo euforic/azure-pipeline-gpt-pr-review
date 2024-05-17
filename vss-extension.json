@@ -1,0 +1,55 @@
+{
+    "manifestVersion": 1,
+    "id": "AIPRReview",
+    "name": "AI Pull Request Review",
+    "version": "0.1.0",
+    "publisher": "euforic",
+    "galleryFlags": [
+        "Public",
+        "Preview"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "A task to review Pull Request using GPT models from OpenAI",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "tags": [
+        "OpenAI",
+        "GPT",
+        "pullRequest",
+        "review"
+    ],
+    "files": [
+        {
+            "path": "AIPRReview"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/euforic/azure-pipeline-gpt-pr-review"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "contributions": [
+        {
+            "id": "AIPRReview",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "AIPRReview"
+            }
+        }
+    ]
+}
