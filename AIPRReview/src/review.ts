@@ -8,7 +8,7 @@ import * as tl from "azure-pipelines-task-lib/task";
 export async function reviewFile(targetBranch: string, fileName: string, httpsAgent: Agent, apiKey: string, openai: OpenAIApi | undefined, aoiEndpoint: string | undefined) {
   console.log(`Start reviewing ${fileName} ...`);
 
-  const defaultOpenAIModel = 'gpt-4o';
+  const defaultOpenAIModel = 'gpt-3.5-turbo';
   const patch = await git.diff([targetBranch, '--', fileName]);
 
   const instructions = `You are an AI code reviewer for a Pull Request in an Azure DevOps pipeline. Your task is to provide feedback on potential bugs, clean code issues, best practices, and performance considerations.

@@ -1,10 +1,10 @@
 {
   "name": "aiprreview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "npx tsc -p ."
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,8 @@
     "binary-extensions": "^2.2.0",
     "node-fetch": "^2.6.6",
     "openai": "^3.2.1",
-    "simple-git": "^3.17.0"
+    "simple-git": "^3.17.0",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
     "@types/node": "^18.15.3",

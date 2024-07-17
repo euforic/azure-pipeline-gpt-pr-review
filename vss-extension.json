@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "AIPRReview",
     "name": "AI Pull Request Review",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "euforic",
     "galleryFlags": [
         "Public",
